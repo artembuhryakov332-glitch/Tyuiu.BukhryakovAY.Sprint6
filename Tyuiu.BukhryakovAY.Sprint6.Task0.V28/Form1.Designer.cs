@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             groupBoxInfo_AY = new GroupBox();
-            labelInfo_AY = new Label();
             labelImage_AY = new Label();
+            labelInfo_AY = new Label();
             labelAnswer_AY = new Label();
             textBoxAnswer_AY = new TextBox();
             groupBoxInfo_AY.SuspendLayout();
@@ -47,17 +47,6 @@
             groupBoxInfo_AY.TabStop = false;
             groupBoxInfo_AY.Enter += groupBoxInfo_AY_Enter;
             // 
-            // labelInfo_AY
-            // 
-            labelInfo_AY.AutoSize = true;
-            labelInfo_AY.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            labelInfo_AY.Location = new Point(20, 31);
-            labelInfo_AY.Name = "labelInfo_AY";
-            labelInfo_AY.Size = new Size(414, 60);
-            labelInfo_AY.TabIndex = 0;
-            labelInfo_AY.Text = "Условие:\r\nВычислить значние выражения при x = 3\r\n";
-            labelInfo_AY.Click += labelInfo_AY_Click;
-            // 
             // labelImage_AY
             // 
             labelImage_AY.Image = Properties.Resources.Screenshot_1;
@@ -65,6 +54,18 @@
             labelImage_AY.Name = "labelImage_AY";
             labelImage_AY.Size = new Size(515, 128);
             labelImage_AY.TabIndex = 1;
+            // 
+            // labelInfo_AY
+            // 
+            labelInfo_AY.AutoSize = true;
+            labelInfo_AY.BackColor = SystemColors.ActiveBorder;
+            labelInfo_AY.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            labelInfo_AY.Location = new Point(20, 31);
+            labelInfo_AY.Name = "labelInfo_AY";
+            labelInfo_AY.Size = new Size(414, 60);
+            labelInfo_AY.TabIndex = 0;
+            labelInfo_AY.Text = "Условие:\r\nВычислить значние выражения при x = 3\r\n";
+            labelInfo_AY.Click += labelInfo_AY_Click;
             // 
             // labelAnswer_AY
             // 
