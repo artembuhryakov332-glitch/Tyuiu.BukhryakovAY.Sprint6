@@ -1,9 +1,9 @@
 using Tyuiu.BukhryakovAY.Sprint6.Task0.V28.Lib;
-namespace Tyuiu.BukhryakovAY.Sprint6
+namespace Tyuiu.BukhryakovAY.Sprint6.Task0.V28
 {
-    public partial class FormMain : Form
+    public partial class Form1 : Form
     {
-        public FormMain()
+        public Form1()
         {
             InitializeComponent();
         }
@@ -13,7 +13,7 @@ namespace Tyuiu.BukhryakovAY.Sprint6
 
         }
 
-        private void labelAnswer_AY_Click(object sender, EventArgs e)
+        private void labelInfo_AY_Click(object sender, EventArgs e)
         {
 
         }

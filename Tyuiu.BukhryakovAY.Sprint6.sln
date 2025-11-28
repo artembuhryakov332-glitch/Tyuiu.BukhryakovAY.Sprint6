@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.BukhryakovAY.Sprint6.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.BukhryakovAY.Sprint6.Task0.V28.Test", "Tyuiu.BukhryakovAY.Sprint6.Task0.V28.Test\Tyuiu.BukhryakovAY.Sprint6.Task0.V28.Test.csproj", "{89EC8D3B-2AAC-48BE-B512-EC724DB0007F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.BukhryakovAY.Sprint6", "Tyuiu.BukhryakovAY.Sprint6\Tyuiu.BukhryakovAY.Sprint6.csproj", "{54CA2B05-3E88-4E98-AE05-BF75EFA801FC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.BukhryakovAY.Sprint6.Task0.V28", "Tyuiu.BukhryakovAY.Sprint6.Task0.V28\Tyuiu.BukhryakovAY.Sprint6.Task0.V28.csproj", "{220406B6-E8A9-4970-AF62-6D6F0FDF5DAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +25,10 @@ Global
 		{89EC8D3B-2AAC-48BE-B512-EC724DB0007F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89EC8D3B-2AAC-48BE-B512-EC724DB0007F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89EC8D3B-2AAC-48BE-B512-EC724DB0007F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{54CA2B05-3E88-4E98-AE05-BF75EFA801FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{54CA2B05-3E88-4E98-AE05-BF75EFA801FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{54CA2B05-3E88-4E98-AE05-BF75EFA801FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{54CA2B05-3E88-4E98-AE05-BF75EFA801FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{220406B6-E8A9-4970-AF62-6D6F0FDF5DAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{220406B6-E8A9-4970-AF62-6D6F0FDF5DAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{220406B6-E8A9-4970-AF62-6D6F0FDF5DAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{220406B6-E8A9-4970-AF62-6D6F0FDF5DAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,7 +36,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{96132F98-7E60-4AAA-816A-9A09A79EE025} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{89EC8D3B-2AAC-48BE-B512-EC724DB0007F} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
-		{54CA2B05-3E88-4E98-AE05-BF75EFA801FC} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{220406B6-E8A9-4970-AF62-6D6F0FDF5DAC} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FCC74AF8-4944-47A1-B244-279CCEA5B022}
