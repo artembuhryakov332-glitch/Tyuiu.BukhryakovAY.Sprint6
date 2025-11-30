@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             groupBoxInfo_AY = new GroupBox();
-            labelInfo_AY = new Label();
-            labelImage_AY = new Label();
-            labelStart_AY = new Label();
-            labelStop_AY = new Label();
-            textBoxStart_AY = new TextBox();
-            textBoxStop_AY = new TextBox();
             textBoxResult_AY = new TextBox();
+            textBoxStop_AY = new TextBox();
+            textBoxStart_AY = new TextBox();
+            labelStop_AY = new Label();
+            labelStart_AY = new Label();
+            labelImage_AY = new Label();
+            labelInfo_AY = new Label();
             groupBoxInfo_AY.SuspendLayout();
             SuspendLayout();
             // 
@@ -56,31 +56,30 @@
             groupBoxInfo_AY.TabStop = false;
             groupBoxInfo_AY.Enter += groupBoxInfo_AY_Enter;
             // 
-            // labelInfo_AY
+            // textBoxResult_AY
             // 
-            labelInfo_AY.AutoSize = true;
-            labelInfo_AY.Location = new Point(15, 31);
-            labelInfo_AY.Name = "labelInfo_AY";
-            labelInfo_AY.Size = new Size(332, 60);
-            labelInfo_AY.TabIndex = 0;
-            labelInfo_AY.Text = "Условие:\r\nПроизвести табуляцию функции:\r\n";
+            textBoxResult_AY.Location = new Point(461, 34);
+            textBoxResult_AY.Multiline = true;
+            textBoxResult_AY.Name = "textBoxResult_AY";
+            textBoxResult_AY.Size = new Size(284, 369);
+            textBoxResult_AY.TabIndex = 6;
+            textBoxResult_AY.TextChanged += textBoxResult_AY_TextChanged;
             // 
-            // labelImage_AY
+            // textBoxStop_AY
             // 
-            labelImage_AY.Image = Properties.Resources.Screenshot_2;
-            labelImage_AY.Location = new Point(15, 118);
-            labelImage_AY.Name = "labelImage_AY";
-            labelImage_AY.Size = new Size(314, 99);
-            labelImage_AY.TabIndex = 1;
+            textBoxStop_AY.Location = new Point(263, 368);
+            textBoxStop_AY.Name = "textBoxStop_AY";
+            textBoxStop_AY.Size = new Size(100, 35);
+            textBoxStop_AY.TabIndex = 5;
+            textBoxStop_AY.TextChanged += textBoxStop_AY_TextChanged;
             // 
-            // labelStart_AY
+            // textBoxStart_AY
             // 
-            labelStart_AY.AutoSize = true;
-            labelStart_AY.Location = new Point(15, 291);
-            labelStart_AY.Name = "labelStart_AY";
-            labelStart_AY.Size = new Size(105, 30);
-            labelStart_AY.TabIndex = 2;
-            labelStart_AY.Text = "StartValue";
+            textBoxStart_AY.Location = new Point(15, 368);
+            textBoxStart_AY.Name = "textBoxStart_AY";
+            textBoxStart_AY.Size = new Size(100, 35);
+            textBoxStart_AY.TabIndex = 4;
+            textBoxStart_AY.TextChanged += textBoxStart_AY_TextChanged;
             // 
             // labelStop_AY
             // 
@@ -91,30 +90,31 @@
             labelStop_AY.TabIndex = 3;
             labelStop_AY.Text = "StopValue";
             // 
-            // textBoxStart_AY
+            // labelStart_AY
             // 
-            textBoxStart_AY.Location = new Point(15, 368);
-            textBoxStart_AY.Name = "textBoxStart_AY";
-            textBoxStart_AY.Size = new Size(100, 35);
-            textBoxStart_AY.TabIndex = 4;
-            textBoxStart_AY.TextChanged += textBoxStart_AY_TextChanged;
+            labelStart_AY.AutoSize = true;
+            labelStart_AY.Location = new Point(15, 291);
+            labelStart_AY.Name = "labelStart_AY";
+            labelStart_AY.Size = new Size(105, 30);
+            labelStart_AY.TabIndex = 2;
+            labelStart_AY.Text = "StartValue";
             // 
-            // textBoxStop_AY
+            // labelImage_AY
             // 
-            textBoxStop_AY.Location = new Point(263, 368);
-            textBoxStop_AY.Name = "textBoxStop_AY";
-            textBoxStop_AY.Size = new Size(100, 35);
-            textBoxStop_AY.TabIndex = 5;
-            textBoxStop_AY.TextChanged += textBoxStop_AY_TextChanged;
+            labelImage_AY.Image = Properties.Resources.Screenshot_2;
+            labelImage_AY.Location = new Point(15, 118);
+            labelImage_AY.Name = "labelImage_AY";
+            labelImage_AY.Size = new Size(314, 99);
+            labelImage_AY.TabIndex = 1;
             // 
-            // textBoxResult_AY
+            // labelInfo_AY
             // 
-            textBoxResult_AY.Location = new Point(461, 34);
-            textBoxResult_AY.Multiline = true;
-            textBoxResult_AY.Name = "textBoxResult_AY";
-            textBoxResult_AY.Size = new Size(284, 369);
-            textBoxResult_AY.TabIndex = 6;
-            textBoxResult_AY.TextChanged += textBoxResult_AY_TextChanged;
+            labelInfo_AY.AutoSize = true;
+            labelInfo_AY.Location = new Point(15, 31);
+            labelInfo_AY.Name = "labelInfo_AY";
+            labelInfo_AY.Size = new Size(332, 60);
+            labelInfo_AY.TabIndex = 0;
+            labelInfo_AY.Text = "Условие:\r\nПроизвести табуляцию функции:\r\n";
             // 
             // Form1
             // 

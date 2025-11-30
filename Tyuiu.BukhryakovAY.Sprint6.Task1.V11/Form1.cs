@@ -49,5 +49,10 @@ namespace Tyuiu.BukhryakovAY.Sprint6.Task1.V11
                 textBoxResult_AY.Text = $"Ошибка: {ex.Message}";
             }
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
