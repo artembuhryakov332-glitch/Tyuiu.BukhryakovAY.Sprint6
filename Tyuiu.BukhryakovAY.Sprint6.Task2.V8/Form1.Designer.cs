@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             groupBoxInfo_AY = new GroupBox();
-            labelInfo_AY = new Label();
-            labelFuncImage_AY = new Label();
-            labelStartValue_AY = new Label();
-            labelStopValue_AY = new Label();
+            buttonFuncStart_AY = new Button();
             dataGridView1 = new DataGridView();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
-            buttonFuncStart_AY = new Button();
+            labelStopValue_AY = new Label();
+            labelStartValue_AY = new Label();
+            labelFuncImage_AY = new Label();
+            labelInfo_AY = new Label();
             groupBoxInfo_AY.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -54,45 +54,17 @@
             groupBoxInfo_AY.Size = new Size(776, 426);
             groupBoxInfo_AY.TabIndex = 0;
             groupBoxInfo_AY.TabStop = false;
+            groupBoxInfo_AY.Enter += groupBoxInfo_AY_Enter;
             // 
-            // labelInfo_AY
+            // buttonFuncStart_AY
             // 
-            labelInfo_AY.AutoSize = true;
-            labelInfo_AY.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            labelInfo_AY.Location = new Point(18, 32);
-            labelInfo_AY.Name = "labelInfo_AY";
-            labelInfo_AY.Size = new Size(414, 90);
-            labelInfo_AY.TabIndex = 0;
-            labelInfo_AY.Text = "Условие:\r\nПроизвести табуляцию функции с -5 до 5\r\nФункция:\r\n";
-            // 
-            // labelFuncImage_AY
-            // 
-            labelFuncImage_AY.Image = Properties.Resources.Screenshot_3;
-            labelFuncImage_AY.Location = new Point(18, 163);
-            labelFuncImage_AY.Name = "labelFuncImage_AY";
-            labelFuncImage_AY.Size = new Size(290, 40);
-            labelFuncImage_AY.TabIndex = 1;
-            // 
-            // labelStartValue_AY
-            // 
-            labelStartValue_AY.AutoSize = true;
-            labelStartValue_AY.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            labelStartValue_AY.Location = new Point(18, 275);
-            labelStartValue_AY.Name = "labelStartValue_AY";
-            labelStartValue_AY.Size = new Size(155, 32);
-            labelStartValue_AY.TabIndex = 2;
-            labelStartValue_AY.Text = "StartValue: -5";
-            labelStartValue_AY.Click += labelStartValue_AY_Click;
-            // 
-            // labelStopValue_AY
-            // 
-            labelStopValue_AY.AutoSize = true;
-            labelStopValue_AY.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            labelStopValue_AY.Location = new Point(18, 345);
-            labelStopValue_AY.Name = "labelStopValue_AY";
-            labelStopValue_AY.Size = new Size(145, 32);
-            labelStopValue_AY.TabIndex = 3;
-            labelStopValue_AY.Text = "StopValue: 5";
+            buttonFuncStart_AY.Location = new Point(312, 373);
+            buttonFuncStart_AY.Name = "buttonFuncStart_AY";
+            buttonFuncStart_AY.Size = new Size(102, 47);
+            buttonFuncStart_AY.TabIndex = 5;
+            buttonFuncStart_AY.Text = "Выполнить";
+            buttonFuncStart_AY.UseVisualStyleBackColor = true;
+            buttonFuncStart_AY.Click += buttonFuncStart_AY_Click;
             // 
             // dataGridView1
             // 
@@ -115,15 +87,44 @@
             Column2.HeaderText = "F(x)";
             Column2.Name = "Column2";
             // 
-            // buttonFuncStart_AY
+            // labelStopValue_AY
             // 
-            buttonFuncStart_AY.Location = new Point(312, 373);
-            buttonFuncStart_AY.Name = "buttonFuncStart_AY";
-            buttonFuncStart_AY.Size = new Size(102, 47);
-            buttonFuncStart_AY.TabIndex = 5;
-            buttonFuncStart_AY.Text = "Выполнить";
-            buttonFuncStart_AY.UseVisualStyleBackColor = true;
-            buttonFuncStart_AY.Click += buttonFuncStart_AY_Click;
+            labelStopValue_AY.AutoSize = true;
+            labelStopValue_AY.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            labelStopValue_AY.Location = new Point(18, 345);
+            labelStopValue_AY.Name = "labelStopValue_AY";
+            labelStopValue_AY.Size = new Size(145, 32);
+            labelStopValue_AY.TabIndex = 3;
+            labelStopValue_AY.Text = "StopValue: 5";
+            // 
+            // labelStartValue_AY
+            // 
+            labelStartValue_AY.AutoSize = true;
+            labelStartValue_AY.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            labelStartValue_AY.Location = new Point(18, 275);
+            labelStartValue_AY.Name = "labelStartValue_AY";
+            labelStartValue_AY.Size = new Size(155, 32);
+            labelStartValue_AY.TabIndex = 2;
+            labelStartValue_AY.Text = "StartValue: -5";
+            labelStartValue_AY.Click += labelStartValue_AY_Click;
+            // 
+            // labelFuncImage_AY
+            // 
+            labelFuncImage_AY.Image = Properties.Resources.Screenshot_3;
+            labelFuncImage_AY.Location = new Point(18, 163);
+            labelFuncImage_AY.Name = "labelFuncImage_AY";
+            labelFuncImage_AY.Size = new Size(290, 40);
+            labelFuncImage_AY.TabIndex = 1;
+            // 
+            // labelInfo_AY
+            // 
+            labelInfo_AY.AutoSize = true;
+            labelInfo_AY.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            labelInfo_AY.Location = new Point(18, 32);
+            labelInfo_AY.Name = "labelInfo_AY";
+            labelInfo_AY.Size = new Size(414, 90);
+            labelInfo_AY.TabIndex = 0;
+            labelInfo_AY.Text = "Условие:\r\nПроизвести табуляцию функции с -5 до 5\r\nФункция:\r\n";
             // 
             // Form1
             // 

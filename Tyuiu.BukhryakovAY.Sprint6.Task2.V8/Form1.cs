@@ -36,10 +36,15 @@ namespace Tyuiu.BukhryakovAY.Sprint6.Task2.V8
                     StartValue++;
                 }
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 MessageBox.Show($"что-то пошло не так: {ex}");
             }
+        }
+
+        private void groupBoxInfo_AY_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
