@@ -34,7 +34,7 @@ namespace Tyuiu.BukhryakovAY.Sprint6.Task6.V20.Lib
 
                 }
             }
-            return resStr;
+            return resStr.Trim();
         }
     }
 }
