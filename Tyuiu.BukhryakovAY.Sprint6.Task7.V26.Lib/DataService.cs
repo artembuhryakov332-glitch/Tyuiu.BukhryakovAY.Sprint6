@@ -21,9 +21,9 @@ namespace Tyuiu.BukhryakovAY.Sprint6.Task7.V26.Lib
                 for (int j = 0; j < columns; j++)
                 {
                     arrayValues[i, j] = Convert.ToInt32(line_r[j]);
-                    if (arrayValues[4, j] >= -5 && arrayValues[4, j] <= 10)
+                    if (arrayValues[i, 1] > 5)
                     {
-                        arrayValues[4, j] = 99;
+                        arrayValues[i, 1] = 222;
                     }
                 }
             }
